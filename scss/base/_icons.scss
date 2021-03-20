@@ -1,0 +1,13 @@
+.icon {
+    display: inline-block;
+}
+
+.icon_play {
+    background-image: url("../img/icons/play.svg");
+    width: 17px;
+    height: 19px;
+    margin-right: 8.5px;
+    &:hover {
+        background-image: url("../img/icons/play-hover.svg");
+    }
+}

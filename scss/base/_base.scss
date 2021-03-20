@@ -1,0 +1,41 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    @extend %font-main;
+    font-size: 1.6rem;
+    color: $color-text;
+    line-height: 1.6rem;
+}
+
+h1 {
+    @include font(4.4rem,  5.4rem, bold);
+    color: $color-header;
+}
+
+h2 {
+    @include font(3.5rem,  5.4rem, bold);
+    color: $color-header;
+}
+
+h3 {
+    @include font(2.4rem,  3.4rem, bold);
+    color: $color-header;
+}
+
+h4 {
+    @include font(2.2rem,  3.3rem, 600);
+    color: $color-header;
+}
+
+h5 {
+    font-family: 'Montserrat', Verdana, sans-serif;
+    @include font(2rem,  3rem, bold);
+    color: $color-header;
+}
+
+h6 { 
+    @include font(1.6rem,  2.6rem, bold);
+    color: $color-header;
+}

@@ -1,0 +1,39 @@
+.main-screen {
+    padding: 30px 0;
+}
+
+.main-screen__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-screen__buttons {
+    >* {
+        margin-right: 30px;
+    }
+}
+
+.link-button {
+    display: inline-flex;
+    align-items: center;
+    color: $color-main;
+    @include font(1.6rem, 2.4rem, 600);
+    &:hover {
+        color: $color-button-hover;
+    }
+}
+
+.main-screen__content {
+    padding-right: 49px;
+}
+
+.main-screen__title {
+    margin: 0 0 30px;
+}
+
+.main-screen__description {
+    margin: 0 0 45px;
+    max-width: 458px;
+    @include font(1.8rem, 2.8rem, normal);
+}

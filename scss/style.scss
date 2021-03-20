@@ -1,0 +1,23 @@
+/*# sourceMappingURL=style.css.map */
+@import '../node_modules/normalize-scss/sass/_normalize';
+
+@import 'variables/constants.scss';
+@import 'variables/mixins.scss';
+@import 'variables/placeholders.scss';
+
+@import 'base/base.scss';
+@import 'base/buttons.scss';
+@import 'base/logo.scss';
+@import 'base/icons.scss';
+
+
+@import 'components/main-screen.scss';
+@import 'components/promo.scss';
+@import 'components/strategies.scss';
+@import 'components/tools.scss';
+
+@import 'layouts/container.scss';
+@import 'layouts/header.scss';
+@import 'layouts/footer.scss';
+@import 'layouts/columns.scss';
+

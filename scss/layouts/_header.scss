@@ -1,0 +1,38 @@
+.header {
+    padding: 15px 0 17px;     
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__navigation-block {
+    display: flex;
+    align-items: center;
+}
+
+.header__navigation {
+    margin-right: 29px;
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation__links {
+    padding: 0;
+}
+
+.navigation__link {
+    list-style: none;
+    margin-right: 27px;
+    color: $color-header;
+    @include font(1.4rem, 1.8rem, normal);
+    @extend %transition;
+    &:hover {
+        color: $color-main;
+    }
+}

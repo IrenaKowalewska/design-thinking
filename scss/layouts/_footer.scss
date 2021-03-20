@@ -1,0 +1,31 @@
+.footer {
+    &__title {
+        margin-bottom: 35px;
+        text-align: justify;
+    }
+    &_links {
+        margin: 0 0 26px;
+    }
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    flex-basis: 16%;
+}
+
+.footer__navigation {
+    flex-basis: 13%;
+    a:hover {
+        color: $color-main;
+    }
+}
+
+.footer__form {
+    flex-basis: 28%;
+}
+
