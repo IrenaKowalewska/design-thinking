@@ -15,6 +15,7 @@ body {
   font-size: 1.6rem;
   color: #544837;
   line-height: 2.6rem;
+  font-weight: 500;
 }
 
 h1 {
@@ -92,6 +93,16 @@ h6 {
 }
 .button_tools {
   padding: 15px 32px;
+  text-transform: uppercase;
+}
+.button_footer {
+  padding: 8px 15px;
+}
+.button_main-screen {
+  padding: 15px 41px;
+}
+.button_header {
+  margin-left: 14px;
 }
 
 .logo-svg:hover .logo-path {
@@ -152,14 +163,31 @@ h6 {
   box-shadow: 11px 11px 19px -3px rgba(77, 173, 247, 0.49);
 }
 
+.form__input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid #BCD0E5;
+  outline: none;
+  line-height: 2.7rem;
+  margin-bottom: 21px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.form__input::-webkit-input-placeholder {
+  color: #BCD0E5;
+}
+
 .main-screen {
-  padding: 30px 0;
+  padding: 26px 0 20px;
 }
 
 .main-screen__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1126px;
+  width: 90%;
 }
 
 .main-screen__buttons > * {
@@ -179,12 +207,9 @@ h6 {
   color: #FF7549;
 }
 
-.main-screen__content {
-  padding-right: 49px;
-}
-
 .main-screen__title {
   margin: 0 0 30px;
+  max-width: 518px;
 }
 
 .main-screen__description {
@@ -196,16 +221,153 @@ h6 {
   font-style: normal;
 }
 
+.main-screen__img {
+  max-width: 592px;
+}
+.main-screen__img img {
+  width: 100%;
+}
+
+.promo {
+  padding: 120px 0 0;
+}
+.promo_layout {
+  margin-bottom: 141px;
+}
+.promo_layout-order .promo__content-block {
+  order: 2;
+}
+.promo_layout-order .promo__img {
+  order: 1;
+}
+
+.promo__img {
+  max-width: 542px;
+}
+.promo__img img {
+  width: 100%;
+}
+
+.promo__content-block {
+  min-height: 427px;
+  max-width: 486px;
+}
+
+.promo__title {
+  margin-bottom: 22px;
+}
+
+.promo__title-text {
+  margin-bottom: 30px;
+}
+
+.promo__subtitle {
+  margin-bottom: 12px;
+}
+
+.promo__subtitle-text {
+  margin-bottom: 25px;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list__item {
+  padding-left: 65px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.list__item::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-image: url("../img/icons/check-sign.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FF9900;
+  border-radius: 14px;
+}
+
+.strategies {
+  padding: 132px 0 102px;
+}
+
+.strategy {
+  min-height: 359px;
+}
+
+.strategies__nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.strategies__title {
+  margin-bottom: 9px;
+}
+
+.strategies__text {
+  margin-bottom: 55px;
+}
+
+.strategies__divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(188, 208, 229, 0.496913);
+  margin-top: 120px;
+}
+
+.strategy__img {
+  max-width: 348px;
+  margin-bottom: 25px;
+}
+.strategy__img img {
+  width: 100%;
+}
+
+.strategy__subtitle {
+  margin: 25px 0 12px;
+}
+
+.strategy__title_active {
+  color: #FF9900;
+}
+
+.drop {
+  display: inline-block;
+  background-color: #979797;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  margin: 0 4px;
+  cursor: pointer;
+}
+.drop_active {
+  background-color: #FF9900;
+}
+
 .tools {
-  padding: 80px 0 90px;
+  padding: 95px 0 90px;
   background: url("../img/tools-bg.png") center bottom/contain no-repeat;
+}
+.tools_layout {
+  max-width: 1095px;
+  width: 98%;
+  margin: 0 auto;
 }
 
 .tools__title {
-  max-width: 539px;
+  max-width: 537px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 54px;
+  margin-bottom: 55px;
 }
 
 .tool__icon {
@@ -223,7 +385,7 @@ h6 {
 
 .tools__button {
   text-align: center;
-  margin-top: 49px;
+  margin-top: 35px;
 }
 
 .container {
@@ -240,6 +402,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header__navigation-block {
@@ -306,6 +469,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 .layout-2-col > * {
   flex-basis: 45%;
@@ -317,7 +481,7 @@ h6 {
   justify-content: space-between;
 }
 .layout-3-col > * {
-  flex-basis: 30%;
+  flex-basis: 32%;
 }
 
 .layout-4-col {
@@ -326,7 +490,7 @@ h6 {
   justify-content: space-between;
 }
 .layout-4-col > * {
-  flex-basis: 20%;
+  flex-basis: 21%;
 }
 
 /*# sourceMappingURL=style.css.map */

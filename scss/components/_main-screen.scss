@@ -1,11 +1,15 @@
 .main-screen {
-    padding: 30px 0;
+    padding: 26px 0 20px;
 }
 
 .main-screen__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1126px;
+    width: 90%;
+
 }
 
 .main-screen__buttons {
@@ -24,16 +28,20 @@
     }
 }
 
-.main-screen__content {
-    padding-right: 49px;
-}
-
 .main-screen__title {
     margin: 0 0 30px;
+    max-width: 518px;
 }
 
 .main-screen__description {
     margin: 0 0 45px;
     max-width: 458px;
     @include font(1.8rem, 2.8rem, normal);
+}
+
+.main-screen__img {
+    max-width: 592px;
+    img {
+        width: 100%;
+    }
 }

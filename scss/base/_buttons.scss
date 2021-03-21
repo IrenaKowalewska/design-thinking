@@ -22,5 +22,15 @@
     }
     &_tools {
         padding: 15px 32px;
+        text-transform: uppercase;
+    }
+    &_footer {
+        padding: 8px 15px;
+    }
+    &_main-screen {
+        padding: 15px 41px;
+    }
+    &_header {
+        margin-left: 14px;
     }
 }
