@@ -437,11 +437,11 @@ h6 {
 }
 
 .footer__title {
-  margin-bottom: 35px;
+  margin-bottom: 43px;
   text-align: justify;
 }
 .footer_links {
-  margin: 0 0 26px;
+  margin: 0 0 17px;
 }
 
 .footer__container {
@@ -451,18 +451,22 @@ h6 {
 }
 
 .logo {
-  flex-basis: 16%;
+  flex-basis: 20%;
 }
 
 .footer__navigation {
-  flex-basis: 13%;
+  flex-basis: 12%;
 }
 .footer__navigation a:hover {
   color: #FF9900;
 }
 
 .footer__form {
-  flex-basis: 28%;
+  flex-basis: 29%;
+}
+
+.footer__form-title {
+  margin-bottom: 30px;
 }
 
 .layout-2-col {
