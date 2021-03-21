@@ -19,6 +19,8 @@
         border: 1px solid $color-border;
         background-color: $color-light;
         color: $color-text-button-bordered;
-        
+    }
+    &_tools {
+        padding: 15px 32px;
     }
 }

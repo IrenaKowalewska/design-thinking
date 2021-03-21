@@ -1,5 +1,25 @@
 .icon {
     display: inline-block;
+    &_arrow {
+        background-image: url("../img/icons/arrow.svg");
+        width: 11px;
+        height: 17px;
+    }
+    &_wave {
+        background-image: url("../img/icons/wave.svg");
+        width: 18px;
+        height: 14px;
+    }
+    // &_heart {
+    //     background-image: url("../img/icons/heart.svg");
+    //     width: 16px;
+    //     height: 15px;
+    // }
+    &_watch {
+        background-image: url("../img/icons/watch.svg");
+        width: 14px;
+        height: 17px;
+    }
 }
 
 .icon_play {
@@ -9,5 +29,30 @@
     margin-right: 8.5px;
     &:hover {
         background-image: url("../img/icons/play-hover.svg");
+    }
+}
+
+.icon-square {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 18px;
+    &_arrow {
+        background-color: $color-arrow;
+        box-shadow: 10px 11px 19px -3px rgba(119, 82, 190,  .49);
+    }
+    &_wave {
+        background-color: $color-wave;
+        box-shadow: 11px 11px 19px -3px rgba(250, 176, 5, .49);
+    }
+    &_heart {
+        background-color: $color-heart;
+        box-shadow: 11px 11px 19px -3px rgba(94%, 24%, 24%, .49);
+    }
+    &_watch {
+        background-color: $color-watch;
+        box-shadow: 11px 11px 19px -3px rgba(30%, 68%, 97%, .49);;
     }
 }

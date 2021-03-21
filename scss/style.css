@@ -14,7 +14,7 @@ html {
 body {
   font-size: 1.6rem;
   color: #544837;
-  line-height: 1.6rem;
+  line-height: 2.6rem;
 }
 
 h1 {
@@ -90,6 +90,9 @@ h6 {
   background-color: #ffffff;
   color: #173A56;
 }
+.button_tools {
+  padding: 15px 32px;
+}
 
 .logo-svg:hover .logo-path {
   fill: #FF9900;
@@ -97,6 +100,21 @@ h6 {
 
 .icon {
   display: inline-block;
+}
+.icon_arrow {
+  background-image: url("../img/icons/arrow.svg");
+  width: 11px;
+  height: 17px;
+}
+.icon_wave {
+  background-image: url("../img/icons/wave.svg");
+  width: 18px;
+  height: 14px;
+}
+.icon_watch {
+  background-image: url("../img/icons/watch.svg");
+  width: 14px;
+  height: 17px;
 }
 
 .icon_play {
@@ -107,6 +125,31 @@ h6 {
 }
 .icon_play:hover {
   background-image: url("../img/icons/play-hover.svg");
+}
+
+.icon-square {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 18px;
+}
+.icon-square_arrow {
+  background-color: #7752BE;
+  box-shadow: 10px 11px 19px -3px rgba(119, 82, 190, 0.49);
+}
+.icon-square_wave {
+  background-color: #FAB005;
+  box-shadow: 11px 11px 19px -3px rgba(250, 176, 5, 0.49);
+}
+.icon-square_heart {
+  background-color: #F03E3D;
+  box-shadow: 11px 11px 19px -3px rgba(240, 61, 61, 0.49);
+}
+.icon-square_watch {
+  background-color: #4DADF7;
+  box-shadow: 11px 11px 19px -3px rgba(77, 173, 247, 0.49);
 }
 
 .main-screen {
@@ -151,6 +194,36 @@ h6 {
   line-height: 2.8rem;
   font-weight: normal;
   font-style: normal;
+}
+
+.tools {
+  padding: 80px 0 90px;
+  background: url("../img/tools-bg.png") center bottom/contain no-repeat;
+}
+
+.tools__title {
+  max-width: 539px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.tool__icon {
+  margin-bottom: 29px;
+}
+
+.tool__title {
+  margin-bottom: 13px;
+}
+
+.tool__text {
+  font-style: normal;
+  font-weight: 500;
+}
+
+.tools__button {
+  text-align: center;
+  margin-top: 49px;
 }
 
 .container {
