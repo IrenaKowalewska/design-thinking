@@ -179,11 +179,13 @@ h6 {
 
 .header__navigation {
   margin-right: 29px;
+  margin-left: auto;
   cursor: pointer;
 }
 
 .navigation {
   display: flex;
+  padding: 0;
 }
 
 .navigation__link {
