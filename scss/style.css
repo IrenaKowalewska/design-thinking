@@ -1,5 +1,5 @@
 /*# sourceMappingURL=style.css.map */
-.navigation__link, .logo-path, .button {
+.navigation-links__link, .navigation__link, .logo-path, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -175,6 +175,45 @@ h6 {
 }
 .form__input::-webkit-input-placeholder {
   color: #BCD0E5;
+}
+
+.header__navigation {
+  margin-right: 29px;
+  cursor: pointer;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation__link {
+  list-style: none;
+  margin-right: 27px;
+  color: #2F281E;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: normal;
+  font-style: normal;
+}
+.navigation__link:hover {
+  color: #FF9900;
+}
+
+.navigation-links {
+  padding: 0;
+}
+
+.navigation-links__link {
+  list-style: none;
+  margin-right: 27px;
+  color: #2F281E;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: normal;
+  font-style: normal;
+}
+.navigation-links__link:hover {
+  color: #FF9900;
 }
 
 .main-screen {
@@ -408,32 +447,6 @@ h6 {
 .header__navigation-block {
   display: flex;
   align-items: center;
-}
-
-.header__navigation {
-  margin-right: 29px;
-  cursor: pointer;
-}
-
-.navigation {
-  display: flex;
-}
-
-.navigation__links {
-  padding: 0;
-}
-
-.navigation__link {
-  list-style: none;
-  margin-right: 27px;
-  color: #2F281E;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-  font-weight: normal;
-  font-style: normal;
-}
-.navigation__link:hover {
-  color: #FF9900;
 }
 
 .footer__title {
