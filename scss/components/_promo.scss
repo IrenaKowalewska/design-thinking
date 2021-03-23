@@ -1,22 +1,44 @@
 .promo {
     padding: 120px 0 0;
+    @include media-tablet {
+        padding-top: 70px;
+    }
     &_layout {
         margin-bottom: 141px;
+        @include media-tablet {
+            margin-bottom: 50px;
+        }
     }
     &_layout-order {
         .promo__content-block {
             order: 2;
+            @include media-tablet {
+                order: 1;
+            }
         }
         .promo__img {
             order: 1;
+            @include media-tablet {
+                order: 2;
+            }
         }
     }
 }
 
+.layout-2-col.promo_layout >* {
+    @include media-tablet {
+        flex-basis: 90%;
+
+    }
+}
 .promo__img {
     max-width: 542px;
     img {
         width: 100%;
+    }
+    @include media-tablet {
+        margin: 0 auto;
+        max-width: 342px;
     }
 }
 

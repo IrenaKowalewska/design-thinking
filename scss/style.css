@@ -25,6 +25,14 @@ h1 {
   font-style: normal;
   color: #2F281E;
 }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
 
 h2 {
   font-size: 3.5rem;
@@ -32,6 +40,14 @@ h2 {
   font-weight: bold;
   font-style: normal;
   color: #2F281E;
+}
+@media (max-width: 414px) {
+  h2 {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    font-weight: bold;
+    font-style: normal;
+  }
 }
 
 h3 {
@@ -41,6 +57,14 @@ h3 {
   font-style: normal;
   color: #2F281E;
 }
+@media (max-width: 414px) {
+  h3 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
 
 h4 {
   font-size: 2.2rem;
@@ -48,6 +72,14 @@ h4 {
   font-weight: 600;
   font-style: normal;
   color: #2F281E;
+}
+@media (max-width: 414px) {
+  h4 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-weight: bold;
+    font-style: normal;
+  }
 }
 
 h5 {
@@ -57,6 +89,14 @@ h5 {
   font-weight: bold;
   font-style: normal;
   color: #2F281E;
+}
+@media (max-width: 414px) {
+  h5 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: bold;
+    font-style: normal;
+  }
 }
 
 h6 {
@@ -103,6 +143,10 @@ h6 {
 }
 .button_header {
   margin-left: 14px;
+}
+
+.logo {
+  display: flex;
 }
 
 .logo-svg:hover .logo-path {
@@ -218,21 +262,78 @@ h6 {
   color: #FF9900;
 }
 
+.hamburger__line, .hamburger:after, .hamburger:before {
+  display: block;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  content: "";
+  background-color: #2F281E;
+}
+
+.hamburger {
+  display: none;
+  width: 30px;
+  height: 25px;
+  margin-right: 40px;
+  position: relative;
+}
+@media (max-width: 1110px) {
+  .hamburger {
+    display: block;
+  }
+}
+.hamburger:before {
+  top: 0;
+  left: 0;
+}
+.hamburger:after {
+  bottom: -1px;
+  left: 0;
+}
+
+.hamburger__line {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
 .main-screen {
   padding: 26px 0 20px;
+  overflow: hidden;
 }
 
 .main-screen__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1126px;
-  width: 90%;
+}
+@media (max-width: 414px) {
+  .main-screen__container {
+    flex-direction: column-reverse;
+  }
 }
 
-.main-screen__buttons > * {
+.main-screen__buttons {
+  display: flex;
+  align-items: center;
+}
+.main-screen__buttons > *:not(:last-child) {
   margin-right: 30px;
+}
+@media (max-width: 768px) {
+  .main-screen__buttons > *:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 414px) {
+  .main-screen__buttons {
+    flex-direction: column;
+  }
+  .main-screen__buttons > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .link-button {
@@ -250,36 +351,85 @@ h6 {
 
 .main-screen__title {
   margin: 0 0 30px;
-  max-width: 518px;
+  width: 518px;
+}
+@media (max-width: 768px) {
+  .main-screen__title {
+    width: 410px;
+  }
+}
+@media (max-width: 414px) {
+  .main-screen__title {
+    text-align: center;
+    width: 300px;
+  }
 }
 
 .main-screen__description {
   margin: 0 0 45px;
-  max-width: 458px;
+  width: 458px;
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: normal;
   font-style: normal;
+  padding-right: 63px;
+}
+@media (max-width: 768px) {
+  .main-screen__description {
+    width: 380px;
+    padding-right: 0;
+  }
+}
+@media (max-width: 414px) {
+  .main-screen__description {
+    text-align: center;
+    width: 300px;
+  }
 }
 
-.main-screen__img {
-  max-width: 592px;
-}
-.main-screen__img img {
-  width: 100%;
+@media (max-width: 414px) {
+  .main-screen__img {
+    max-width: 100%;
+  }
 }
 
 .promo {
   padding: 120px 0 0;
 }
+@media (max-width: 768px) {
+  .promo {
+    padding-top: 70px;
+  }
+}
 .promo_layout {
   margin-bottom: 141px;
+}
+@media (max-width: 768px) {
+  .promo_layout {
+    margin-bottom: 50px;
+  }
 }
 .promo_layout-order .promo__content-block {
   order: 2;
 }
+@media (max-width: 768px) {
+  .promo_layout-order .promo__content-block {
+    order: 1;
+  }
+}
 .promo_layout-order .promo__img {
   order: 1;
+}
+@media (max-width: 768px) {
+  .promo_layout-order .promo__img {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout-2-col.promo_layout > * {
+    flex-basis: 90%;
+  }
 }
 
 .promo__img {
@@ -287,6 +437,12 @@ h6 {
 }
 .promo__img img {
   width: 100%;
+}
+@media (max-width: 768px) {
+  .promo__img {
+    margin: 0 auto;
+    max-width: 342px;
+  }
 }
 
 .promo__content-block {
@@ -338,9 +494,28 @@ h6 {
 .strategies {
   padding: 132px 0 102px;
 }
+@media (max-width: 768px) {
+  .strategies {
+    padding: 50px 0 40px;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .layout-3-col.strategies_layout {
+    justify-content: center;
+  }
+  .layout-3-col.strategies_layout > * {
+    flex-basis: 50%;
+  }
+}
 
 .strategy {
   min-height: 359px;
+}
+@media (max-width: 768px) {
+  .strategy {
+    min-height: 320px;
+  }
 }
 
 .strategies__nav-bar {
@@ -353,9 +528,20 @@ h6 {
 .strategies__title {
   margin-bottom: 9px;
 }
+@media (max-width: 414px) {
+  .strategies__title {
+    text-align: center;
+  }
+}
 
 .strategies__text {
   margin-bottom: 55px;
+}
+@media (max-width: 414px) {
+  .strategies__text {
+    text-align: center;
+    margin-bottom: 35px;
+  }
 }
 
 .strategies__divider {
@@ -364,13 +550,38 @@ h6 {
   background-color: rgba(188, 208, 229, 0.496913);
   margin-top: 120px;
 }
+@media (max-width: 768px) {
+  .strategies__divider {
+    margin-top: 60px;
+  }
+}
 
 .strategy__img {
   max-width: 348px;
-  margin-bottom: 25px;
 }
 .strategy__img img {
   width: 100%;
+}
+@media (max-width: 1110px) {
+  .strategy__img {
+    width: 348px;
+  }
+}
+@media (max-width: 414px) {
+  .strategy__img {
+    width: 280px;
+  }
+}
+
+.strategy__content {
+  padding: 25px 54px 39px 0;
+  max-width: 359px;
+}
+@media (max-width: 414px) {
+  .strategy__content {
+    padding: 0;
+    max-width: 320px;
+  }
 }
 
 .strategy__subtitle {
@@ -402,6 +613,29 @@ h6 {
   max-width: 1095px;
   width: 98%;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .tools {
+    padding: 50px 0 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout-4-col.tools_layout > .tool {
+    flex-basis: 48%;
+  }
+}
+@media (max-width: 414px) {
+  .layout-4-col.tools_layout > .tool {
+    flex-basis: 98%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tool {
+    margin-bottom: 15px;
+    text-align: center;
+  }
 }
 
 .tools__title {
@@ -443,12 +677,28 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: column;
+  }
 }
 
-.header__navigation-block {
+@media (max-width: 1110px) {
+  .header__navigation {
+    display: none;
+  }
+}
+
+.header__logo {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .header__buttons {
+    margin-top: 30px;
+  }
 }
 
 .footer__title {
@@ -462,22 +712,66 @@ h6 {
 .footer__container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: flex-start;
+}
+@media (max-width: 1110px) {
+  .footer__container {
+    flex-direction: column;
+  }
 }
 
 .logo {
-  flex-basis: 20%;
+  width: 20%;
 }
 
-.footer__navigation {
-  flex-basis: 12%;
+.footer__links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 71%;
 }
+@media (max-width: 1110px) {
+  .footer__links-wrapper {
+    margin-top: 25px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .footer__links-wrapper {
+    flex-direction: column;
+  }
+}
+
+.footer__navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 46%;
+}
+@media (max-width: 768px) {
+  .footer__navigation-wrapper {
+    width: 70%;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 414px) {
+  .footer__navigation-wrapper {
+    width: 90%;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+}
+
 .footer__navigation a:hover {
   color: #FF9900;
 }
 
 .footer__form {
-  flex-basis: 29%;
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .footer__form {
+    margin-top: 25px;
+    width: 70%;
+  }
 }
 
 .footer__form-title {
@@ -500,7 +794,7 @@ h6 {
   justify-content: space-between;
 }
 .layout-3-col > * {
-  flex-basis: 32%;
+  flex-basis: 30%;
 }
 
 .layout-4-col {

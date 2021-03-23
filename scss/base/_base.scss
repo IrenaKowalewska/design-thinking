@@ -13,27 +13,42 @@ body {
 h1 {
     @include font(4.4rem,  5.4rem, bold);
     color: $color-header;
+    @include media-tablet {
+        @include font(4.0rem,  5.0rem, bold);
+    }
 }
 
 h2 {
     @include font(3.5rem,  5.4rem, bold);
     color: $color-header;
+    @include media-mobile {
+        @include font(2.8rem,  3.4rem, bold);
+    }
 }
 
 h3 {
     @include font(2.4rem,  3.4rem, bold);
     color: $color-header;
+    @include media-mobile {
+        @include font(2.2rem,  3rem, bold);
+    }
 }
 
 h4 {
     @include font(2.2rem,  3.3rem, 600);
     color: $color-header;
+    @include media-mobile {
+        @include font(2.0rem,  2.8rem, bold);
+    }
 }
 
 h5 {
     font-family: 'Montserrat', Verdana, sans-serif;
     @include font(2rem,  3rem, bold);
     color: $color-header;
+    @include media-mobile {
+        @include font(1.8rem,  2rem, bold);
+    }
 }
 
 h6 { 

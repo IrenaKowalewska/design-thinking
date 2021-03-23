@@ -14,11 +14,16 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <a href="#" class="logo">
-                <object type="image/svg+xml" data="./img/logo.svg" class="logo__object" >
-                    <img src="./img/logo.png" alt="logo">
-                </object>
-            </a>
+            <div class="header__logo">
+                <div class="hamburger">
+                    <span class="hamburger__line"></span>
+                </div>
+                <a href="#" class="logo">
+                    <object type="image/svg+xml" data="./img/logo.svg" class="logo__object" >
+                        <img src="./img/logo.png" alt="logo">
+                    </object>
+                </a>
+            </div>
                 <nav class="header__navigation">
                     <ul class="navigation">
                         <li class="navigation__link">Product </li>
@@ -62,7 +67,7 @@
                             </span>
                         </div>
                         <h4 class="tool__title">First click tests</h4>
-                        <p class="tool__text">WWhile most people enjoy casino gambling,</p>
+                        <p class="tool__text">While most people enjoy casino gambling,</p>
                     </div>
                     <div class="tool">
                         <div class="tool__icon">
@@ -154,13 +159,13 @@
             <div class="container">
                 <h2 class="strategies__title">Marketing Strategies</h2>
                 <p class="strategies__text">Join 40,000+ other marketers and get proven strategies on email marketing</p>
-                <div class="layout-3-col">
+                <div class="layout-3-col strategies_layout">
                     <div class="strategy">
                         <div class="strategy__img">
                             <img src="./img/strategy-1.jpg" alt="strategy">
                         </div>
                         <div class="strategy__content">
-                            <div class="strategy__text">
+                            <div class="strategy__subtitle">
                                 <span>By Abdullah</span>
                                 <span>03 March 2019</span>
                             </div>
@@ -206,31 +211,35 @@
             <a href="#" class="logo">
                 <img src="./img/logo.svg" alt="logo">
             </a>
-            <div class="footer__navigation">
-                <h5 class="footer__title">Quick Links</h5>
-                <ul class="navigation-links">
-                    <li class="navigation-links__link footer_links"><a href="#">About Us</a></li>
-                    <li class="navigation-links__link footer_links"><a href="#">Blog</a></li>
-                    <li class="navigation-links__link footer_links"><a href="#">Contact</a></li>
-                    <li class="navigation-links__link footer_links"><a href="#">FAQ</a></li>
-                </ul>
+            <div class="footer__links-wrapper">
+               <div class="footer__navigation-wrapper">
+                <div class="footer__navigation">
+                    <h5 class="footer__title">Quick Links</h5>
+                    <ul class="navigation-links">
+                        <li class="navigation-links__link footer_links"><a href="#">About Us</a></li>
+                        <li class="navigation-links__link footer_links"><a href="#">Blog</a></li>
+                        <li class="navigation-links__link footer_links"><a href="#">Contact</a></li>
+                        <li class="navigation-links__link footer_links"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__navigation">
+                    <h5 class="footer__title">Legal Stuff</h5>
+                    <ul class="navigation-links">
+                        <li class="navigation-links__link footer_links"><a href="#">Disclaimer</a></li>
+                        <li class="navigation-links__link footer_links"><a href="#">Financing</a></li>
+                        <li class="navigation-links__link footer_links"><a href="#">Privacy Policy</a></li>
+                        <li class="navigation-links__link footer_links"><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+               </div>
+                <div class="footer__form">
+                    <h5 class="footer__form-title">knowing you're always on the best energy deal. </h5>
+                    <form method="POST" class="form">
+                        <input class="form__input" type="number" placeholder="Enter your phone Number">
+                        <button class="button button_colored button_footer" type="submit">Sign up Now</button>
+                    </form>
+                </div>  
             </div>
-            <div class="footer__navigation">
-                <h5 class="footer__title">Legal Stuff</h5>
-                <ul class="navigation-links">
-                    <li class="navigation-links__link footer_links"><a href="#">Disclaimer</a></li>
-                    <li class="navigation-links__link footer_links"><a href="#">Financing</a></li>
-                    <li class="navigation-links__link footer_links"><a href="#">Privacy Policy</a></li>
-                    <li class="navigation-links__link footer_links"><a href="#">Terms of Service</a></li>
-                </ul>
-            </div>
-            <div class="footer__form">
-                <h5 class="footer__form-title">knowing you're always on the best energy deal. </h5>
-                <form method="POST" class="form">
-                    <input class="form__input" type="number" placeholder="Enter your phone Number">
-                    <button class="button button_colored button_footer" type="submit">Sign up Now</button>
-                </form>
-            </div>  
         </div>
     </footer>
 </body>

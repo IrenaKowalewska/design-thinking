@@ -1,9 +1,23 @@
 .strategies {
     padding: 132px 0 102px;
+    @include media-tablet {
+        padding: 50px 0 40px;
+    }
 }
 
+.layout-3-col.strategies_layout {
+    @media screen and (max-width: 798px) {
+        justify-content: center;
+        &>* {
+            flex-basis: 50%;
+        }
+    }
+}
 .strategy {
     min-height: 359px;
+    @include media-tablet {
+        min-height: 320px;
+    }
 }
 
 .strategies__nav-bar {
@@ -15,10 +29,17 @@
 
 .strategies__title {
     margin-bottom: 9px;
+    @include media-mobile {
+        text-align: center;
+    }
 }
 
 .strategies__text {
     margin-bottom: 55px;
+    @include media-mobile {
+        text-align: center;
+        margin-bottom: 35px;
+    }
 }
 
 .strategies__divider {
@@ -26,15 +47,30 @@
     height: 1px;
     background-color: rgba(188, 208, 229, 0.496913);
     margin-top: 120px;
+    @include media-tablet {
+        margin-top: 60px;
+    }
 }
 .strategy__img {
     max-width: 348px;
-    margin-bottom: 25px;
     img {
         width: 100%;
     }
+    @include media-laptop {
+        width: 348px;
+    }
+    @include media-mobile {
+        width: 280px;
+    }
 }
-
+.strategy__content {
+    padding: 25px 54px 39px 0;
+    max-width: 359px;
+    @include media-mobile {
+        padding: 0;
+        max-width: 320px;
+    }
+}
 .strategy__subtitle {
     margin: 25px 0 12px;
 }
