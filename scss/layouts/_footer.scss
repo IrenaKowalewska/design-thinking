@@ -34,17 +34,17 @@
     }
 }
 
-.footer__navigation-wrapper {
+.layout-2-col.footer_layout {
     display: flex;
-    justify-content: space-between;
-    width: 46%;
+    justify-content: flex-start;
+    width: 57%;
     @include media-tablet {
-        width: 70%;
-        justify-content: space-between;
+        width: 85%;
+        justify-content: flex-start;
     }
     @include media-mobile {
-        width: 90%;
-        justify-content: space-between;
+        width: 98%;
+        justify-content: flex-start;
         margin-right: 0;
     }
 }
@@ -58,8 +58,14 @@
 .footer__form {
     width: 40%;
     @include media-tablet {
+        padding-bottom: 20px;
         margin-top: 25px;
-        width: 70%;
+        width: 300px;
+    }
+    @include media-mobile {
+        padding-bottom: 20px;
+        margin-top: 25px;
+        width: 91%;
     }
 }
 

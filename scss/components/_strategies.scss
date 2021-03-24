@@ -1,7 +1,7 @@
 .strategies {
     padding: 132px 0 102px;
     @include media-tablet {
-        padding: 50px 0 40px;
+        padding: 40px 0 40px;
     }
 }
 
@@ -64,7 +64,7 @@
     }
 }
 .strategy__content {
-    padding: 25px 54px 39px 0;
+    padding: 0 54px 0 0;
     max-width: 359px;
     @include media-mobile {
         padding: 0;

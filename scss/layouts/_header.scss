@@ -6,20 +6,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     @include media-tablet {
         flex-direction: column;
     }
 }
 
 .header__navigation {
-    @include media-laptop {
-        display: none;
-    }
-}
-
-.header__logo {
+    margin-right: 29px;
+    margin-left: auto;
     display: flex;
-    align-items: center;
+    cursor: pointer;
+    @include media-laptop {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+    }
 }
 
 .header__buttons {
@@ -27,3 +29,4 @@
         margin-top: 30px;
     }
 }
+

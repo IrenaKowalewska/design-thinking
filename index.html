@@ -12,6 +12,7 @@
     <title>Test task</title>
 </head>
 <body>
+    <div class="overlay"></div>
     <header class="header">
         <div class="container header__container">
             <div class="header__logo">
@@ -24,18 +25,18 @@
                     </object>
                 </a>
             </div>
-                <nav class="header__navigation">
-                    <ul class="navigation">
-                        <li class="navigation__link">Product </li>
-                        <li class="navigation__link">Customers</li>
-                        <li class="navigation__link">Pricng</li>
-                        <li class="navigation__link">Resourcest</li>
-                    </ul>
-                </nav>
-                <div class="header__buttons">
-                    <a href="#" class="button button_bordered">Sign In</a>
-                    <a href="#" class="button button_colored button_header">Sign Up</a>
-                </div>
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li class="navigation__link">Product </li>
+                    <li class="navigation__link">Customers</li>
+                    <li class="navigation__link">Pricng</li>
+                    <li class="navigation__link">Resourcest</li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <a href="#" class="button button_bordered">Sign In</a>
+                <a href="#" class="button button_colored button_header">Sign Up</a>
+            </div>
         </div>
     </header>
     <main>
@@ -212,35 +213,36 @@
                 <img src="./img/logo.svg" alt="logo">
             </a>
             <div class="footer__links-wrapper">
-               <div class="footer__navigation-wrapper">
-                <div class="footer__navigation">
-                    <h5 class="footer__title">Quick Links</h5>
-                    <ul class="navigation-links">
-                        <li class="navigation-links__link footer_links"><a href="#">About Us</a></li>
-                        <li class="navigation-links__link footer_links"><a href="#">Blog</a></li>
-                        <li class="navigation-links__link footer_links"><a href="#">Contact</a></li>
-                        <li class="navigation-links__link footer_links"><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer__navigation">
-                    <h5 class="footer__title">Legal Stuff</h5>
-                    <ul class="navigation-links">
-                        <li class="navigation-links__link footer_links"><a href="#">Disclaimer</a></li>
-                        <li class="navigation-links__link footer_links"><a href="#">Financing</a></li>
-                        <li class="navigation-links__link footer_links"><a href="#">Privacy Policy</a></li>
-                        <li class="navigation-links__link footer_links"><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
+               <div class="layout-2-col footer_layout">
+                    <div class="footer__navigation">
+                        <h5 class="footer__title">Quick Links</h5>
+                        <ul class="navigation-links">
+                            <li class="navigation-links__link footer_links"><a href="#">About Us</a></li>
+                            <li class="navigation-links__link footer_links"><a href="#">Blog</a></li>
+                            <li class="navigation-links__link footer_links"><a href="#">Contact</a></li>
+                            <li class="navigation-links__link footer_links"><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__navigation">
+                        <h5 class="footer__title">Legal Stuff</h5>
+                        <ul class="navigation-links">
+                            <li class="navigation-links__link footer_links"><a href="#">Disclaimer</a></li>
+                            <li class="navigation-links__link footer_links"><a href="#">Financing</a></li>
+                            <li class="navigation-links__link footer_links"><a href="#">Privacy Policy</a></li>
+                            <li class="navigation-links__link footer_links"><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
                </div>
                 <div class="footer__form">
                     <h5 class="footer__form-title">knowing you're always on the best energy deal. </h5>
                     <form method="POST" class="form">
-                        <input class="form__input" type="number" placeholder="Enter your phone Number">
+                        <input class="form__input" type="text" placeholder="Enter your phone Number">
                         <button class="button button_colored button_footer" type="submit">Sign up Now</button>
                     </form>
                 </div>  
             </div>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>
