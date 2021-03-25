@@ -1,0 +1,53 @@
+.tools {
+    padding: 95px 0 90px;
+    background: url("../img/tools-bg.png") center bottom/contain no-repeat;
+    &_layout {
+        max-width: 1095px;
+        width: 98%;
+        margin: 0 auto;
+    }
+    @include media-tablet {
+        padding: 50px 0 50px;
+    }
+}
+
+.layout-4-col.tools_layout {
+    &> .tool {
+        @include media-tablet {
+            flex-basis: 48%;
+        }
+        @include media-mobile {
+            flex-basis: 98%;
+        }
+    }
+}
+
+.tool {
+    @include media-tablet {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+.tools__title {
+    max-width: 537px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.tool__icon {
+   margin-bottom: 29px;
+}
+
+.tool__title {
+    margin-bottom: 13px;
+}
+
+.tool__text {
+    font-style: normal;
+    font-weight: 500;
+}
+.tools__button {
+    text-align: center;
+    margin-top: 35px;
+}

@@ -1,0 +1,90 @@
+.promo {
+    padding: 120px 0 0;
+    @include media-tablet {
+        padding-top: 70px;
+    }
+    &_layout {
+        margin-bottom: 141px;
+        @include media-tablet {
+            margin-bottom: 50px;
+        }
+    }
+    &_layout-order {
+        .promo__content-block {
+            order: 2;
+            @include media-tablet {
+                order: 1;
+            }
+        }
+        .promo__img {
+            order: 1;
+            @include media-tablet {
+                order: 2;
+            }
+        }
+    }
+}
+
+.layout-2-col.promo_layout >* {
+    @include media-tablet {
+        flex-basis: 90%;
+
+    }
+}
+.promo__img {
+    max-width: 542px;
+    img {
+        width: 100%;
+    }
+    @include media-tablet {
+        margin: 0 auto;
+        max-width: 342px;
+    }
+}
+
+.promo__content-block {
+    min-height: 427px;
+    max-width: 486px;
+}
+
+.promo__title {
+    margin-bottom: 22px;
+}
+
+.promo__title-text {
+    margin-bottom: 30px;
+}
+
+.promo__subtitle {
+    margin-bottom: 12px;
+}
+
+.promo__subtitle-text {
+    margin-bottom: 25px;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &__item {
+        padding-left: 65px;
+        margin-bottom: 30px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            background-image: url('../img/icons/check-sign.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: $color-main;
+            border-radius: 14px;
+        }
+    }
+}
+

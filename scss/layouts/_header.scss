@@ -1,0 +1,32 @@
+.header {
+    padding: 15px 0 17px;     
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include media-tablet {
+        flex-direction: column;
+    }
+}
+
+.header__navigation {
+    margin-right: 29px;
+    margin-left: auto;
+    display: flex;
+    cursor: pointer;
+    @include media-laptop {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+    }
+}
+
+.header__buttons {
+    @include media-tablet {
+        margin-top: 30px;
+    }
+}
+

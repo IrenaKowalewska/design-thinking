@@ -1,0 +1,36 @@
+.button {
+    @extend %font-main;
+    padding: 11px 23px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    @include font(1.6rem, 2.4rem, 600);
+    color: $color-light;
+    @extend %transition;
+    cursor: pointer;
+    &:hover {
+        background-color: $color-button-hover;
+        border: 1px solid $color-button-hover;
+    }
+    &_colored {
+        background: $color-main;
+        border: 1px solid $color-main;
+    }
+    &_bordered {
+        border: 1px solid $color-border;
+        background-color: $color-light;
+        color: $color-text-button-bordered;
+    }
+    &_tools {
+        padding: 15px 32px;
+        text-transform: uppercase;
+    }
+    &_footer {
+        padding: 8px 15px;
+    }
+    &_main-screen {
+        padding: 15px 41px;
+    }
+    &_header {
+        margin-left: 14px;
+    }
+}

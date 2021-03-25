@@ -1,0 +1,12 @@
+.layout-2-col {
+    @include columns(45%);
+    align-items: center;
+}
+
+.layout-3-col {
+    @include columns(32%);
+}
+
+.layout-4-col {
+    @include columns(21%);
+}

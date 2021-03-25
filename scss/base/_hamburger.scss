@@ -1,0 +1,53 @@
+%hamburger-line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    content: "";
+    background-color: $color-header;
+}
+
+.hamburger {
+    display: none;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    @extend %transition;
+    @include media-laptop {
+        display: block;
+        position: fixed;
+        margin: 0;
+        left: 10px;
+        top: 18px;
+        cursor: pointer;
+        z-index: 4;
+    }
+    &:before {
+        @extend %hamburger-line;
+        top: 0;
+        left: 0;
+    }
+    &:after {
+        @extend %hamburger-line;
+        bottom: 0;
+        left: 0;
+    }
+    &__line {
+        @extend %hamburger-line;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+    &_active {
+        top: 0;
+        .hamburger__line {
+            display: none;
+        }
+        &::before {
+            transform: translateY(25px) rotate(-45deg);
+        }
+        &::after {
+            transform: translateY(2px) rotate(45deg);
+        }
+    }
+}
