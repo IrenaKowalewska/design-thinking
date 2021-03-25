@@ -813,12 +813,25 @@ h6 {
   }
 }
 
+.footer {
+  padding-bottom: 75px;
+}
 .footer__title {
   margin-bottom: 43px;
   text-align: justify;
 }
 .footer_links {
   margin: 0 0 17px;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 414px) {
+  .footer {
+    padding-bottom: 25px;
+  }
 }
 
 .footer__container {
