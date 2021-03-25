@@ -113,5 +113,30 @@ const strategiesSlider = () => {
     })
 }
 
+const formInput = document.querySelector('.form__input');
+const formButton = document.querySelector('.button_footer');
+let formInputValue = '';
+formInput.addEventListener('keydown', () => {
+    formInputValue = formInput.value;
+})
+formButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    const reg = new RegExp('^[0-9]+$');
+    if (formInputValue.length === 11) {
+        if (reg.test(formInputValue)) {
+            formInputValue = '';
+            formInput.value = '';
+            formInput.style.borderColor = '#4DADF7';
+        } else {
+
+            formInput.style.borderColor = '#F03E3D';
+        }
+       
+    } else {
+        formInput.style.borderColor = '#F03E3D';
+    }
+    
+})
+
 hamburgerMenu();
 strategiesSlider();
